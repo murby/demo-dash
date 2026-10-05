@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "7186b372-a681-5b72-b743-3f1e54a793e5",
+  "name": "3 - Making It Work",
+  "symbol": "bg_3_making_it_work",
+  "tileColors": "003e+034+008+024+004+034+008+024+004+033+023+006+024+007+023+0011+023+0011+023+0011+023+003+023+00b+023+003+023+00b+023+003+023+0011+023+006a+",
+  "filename": "room_build.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "393b64af-4b0e-538c-8ada-5e5c57263792",
+  "name": "Golden Demo Trophy",
+  "symbol": "sprite_golden_demo_trophy",
+  "states": [
+    {
+      "id": "b3b43637-c2e6-5107-90a3-62e8ef05bccf",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "d30dd2a9-ac24-5982-8cc3-0996f9f46901",
+          "frames": [
+            {
+              "id": "c8d0cd66-c901-5d19-a3d7-876991a2806a",
+              "tiles": [
+                {
+                  "id": "8f0452fb-46d1-5bff-becc-b2a2b6a8f3bd",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "b102d6bc-660f-5d48-a912-886be6a8b1f1",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4f83be0-768d-5118-ab1c-923a19369478",
+          "frames": [
+            {
+              "id": "f11437d6-2a1b-51d0-b6aa-0d3331be54d9",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "97e26c34-6b20-5814-9f38-eb1a82067c6c",
+          "frames": [
+            {
+              "id": "8bb52a81-379f-5012-9f90-9d7006a50b1b",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "597ff20c-3332-52b0-b20c-1d55f9114acf",
+          "frames": [
+            {
+              "id": "9ee1ef01-b546-5266-84c4-68e913f28c6d",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "ff57f431-7405-5396-b088-db79f40ab760",
+          "frames": [
+            {
+              "id": "53065e3a-940d-592d-ae93-41e1c7a281a7",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "c7b435e5-1b28-550b-a06f-4b827e454075",
+          "frames": [
+            {
+              "id": "09cca3c4-8798-52ef-8cf7-13e543696cf7",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "058cc18d-9f5b-5bef-a885-8d1ccbf0798f",
+          "frames": [
+            {
+              "id": "440ceb26-8cd1-50c7-8822-45826e361b65",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "d726a730-75bd-5c37-b79b-1b1e93231ba7",
+          "frames": [
+            {
+              "id": "a3581360-f997-5f64-8d43-6bea14ea3355",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "gold_trophy.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "b7d4d22eba3f1be6e294ec024f8d16e1e7436959"
+}

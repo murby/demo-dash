@@ -1,0 +1,74 @@
+{
+  "_resourceType": "actor",
+  "id": "room-idea-exit",
+  "_index": 3,
+  "symbol": "actor_idea_next_room_gate",
+  "prefabId": "",
+  "name": "Next Room Gate",
+  "coordinateType": "tiles",
+  "x": 16,
+  "y": 15,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "84d0f316-4182-5738-8a96-e9562215a9df",
+  "paletteId": "61d0608a-1ee3-513a-93df-fef76d1cb6ef",
+  "direction": "left",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "rooms-event-48",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "7"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "df79d9b1-0462-556e-8532-79f8a83dad6c",
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 15
+              },
+              "direction": "up",
+              "fadeSpeed": "2"
+            },
+            "id": "83c29fbb-cd66-5f02-a1ec-fd0aea87d84a"
+          }
+        ],
+        "false": [
+          {
+            "id": "rooms-event-47",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "VISIT THE IDEA\nBOARD. DODGE THE\nDRONES IN AISLES.",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

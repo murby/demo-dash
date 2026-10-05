@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "751f147a-4934-5c58-9fc8-a6b6edee7059",
+  "name": "Drone Alarm",
+  "colors": [
+    "FFF0D8",
+    "F87860",
+    "B83850",
+    "182038"
+  ],
+  "defaultName": "Drone Alarm",
+  "defaultColors": [
+    "FFF0D8",
+    "F87860",
+    "B83850",
+    "182038"
+  ]
+}

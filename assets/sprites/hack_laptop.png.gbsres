@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "84d0f316-4182-5738-8a96-e9562215a9df",
+  "name": "Hackathon Laptop",
+  "symbol": "sprite_hackathon_laptop",
+  "states": [
+    {
+      "id": "cabf4864-1663-58f7-b455-905fea0a1e9e",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "7caa03e7-1f07-552f-b4da-014e713c7498",
+          "frames": [
+            {
+              "id": "9aec0143-aa0c-529d-8f65-942136a0e06f",
+              "tiles": [
+                {
+                  "id": "2597474c-81f4-5410-9a92-df2663bb24a2",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "dc9d71b1-c849-572c-84c3-12d6b7a9fa5c",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a5835edc-0843-597d-ab1a-9defff3de0fd",
+          "frames": [
+            {
+              "id": "1c141691-d22f-5dde-8342-3492b45b031b",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "55c26d3f-1600-55d3-9357-d81c68f6ede7",
+          "frames": [
+            {
+              "id": "6f56fd3e-3ed3-57c1-b871-972619bda748",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "203c7d4d-a3db-5abd-b07f-4da8fee78a5b",
+          "frames": [
+            {
+              "id": "1fcb145a-c5c7-5470-bb15-6d17fddab3de",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "101f9dd4-3cae-5710-a08c-079bc01597a3",
+          "frames": [
+            {
+              "id": "bba3bce0-bef4-5cf7-abb8-7d6f4cf1d352",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "bc336ce5-b1ee-509e-a975-457a4b0dcb98",
+          "frames": [
+            {
+              "id": "9127ce44-8a45-5169-b81e-d6a7cea560fc",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "7adc4cac-17f9-5113-bc4a-38875e3f0561",
+          "frames": [
+            {
+              "id": "db107c71-cff1-54ea-b3ab-fb227c90168b",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "d174178c-48a9-5344-97d5-17ae2cc016e1",
+          "frames": [
+            {
+              "id": "0dd2da72-1833-536a-b7b9-f4ffe667c409",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "hack_laptop.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "625aa7f21def87580abc42ce99a936daf5891b75"
+}

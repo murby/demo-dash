@@ -1,0 +1,165 @@
+{
+  "game": "Demo Dash — Four-Room Hackathon Adventure",
+  "verifiedAt": "2026-10-05",
+  "outcome": "passed",
+  "build": {
+    "romPath": "roms/demo-dash-four-rooms.gbc",
+    "sha256": "55e0020e99e1fbd24fd76e4ee16dc4bfc539b1f6fd2d1fa3972fb6253b7de6fa",
+    "sizeBytes": 131072,
+    "colorMode": "gbc-only",
+    "mapper": "MBC5"
+  },
+  "runtime": {
+    "name": "PyBoy",
+    "version": "2.7.0",
+    "protocolVersion": 1,
+    "workerSha256": "6271cbbb9ca76d4d149173f4110705cfa3c567349f0cb7ceb347bf1df7598925"
+  },
+  "observations": [
+    {
+      "frame": 443,
+      "check": "Room 1 exit refused before teammate found"
+    },
+    {
+      "frame": 670,
+      "check": "Teammate found; progress 1"
+    },
+    {
+      "frame": 1007,
+      "check": "Transition to idea room"
+    },
+    {
+      "frame": 1378,
+      "check": "Idea ready; progress 2"
+    },
+    {
+      "frame": 1517,
+      "check": "Drone bump resets current room position but preserves teammate and idea; bumps 1"
+    },
+    {
+      "frame": 1813,
+      "check": "Transition to build room"
+    },
+    {
+      "frame": 2392,
+      "check": "Build refused without power; power 0, prototype 0, progress 2"
+    },
+    {
+      "frame": 2840,
+      "check": "Power collected"
+    },
+    {
+      "frame": 3211,
+      "check": "Powered prototype completed; progress 3"
+    },
+    {
+      "frame": 3484,
+      "check": "Transition to demo hall"
+    },
+    {
+      "frame": 3777,
+      "check": "Demo accepted; progress 4, win 1, all campaign flags 1; drones disappear"
+    },
+    {
+      "frame": 3858,
+      "check": "YOU WIN / BEST DEMO AWARD / HACKATHON HERO visible"
+    }
+  ],
+  "finalState": {
+    "frame": 3777,
+    "scene": {
+      "id": "352ba9f2-7238-566c-8f93-16452a75492a",
+      "sceneId": "352ba9f2-7238-566c-8f93-16452a75492a",
+      "name": "4 - Demo Time!",
+      "symbol": "scene_4_demo_time",
+      "resourcePath": "project/scenes/4_demo_time/scene.gbsres",
+      "type": "TOPDOWN",
+      "width": 20,
+      "height": 18
+    },
+    "variables": [
+      {
+        "id": "3",
+        "variableId": "3",
+        "name": "Demo Progress",
+        "symbol": "var_demo_progress",
+        "value": 4,
+        "unsignedValue": 4,
+        "resourcePath": "project/variables.gbsres"
+      },
+      {
+        "id": "4",
+        "variableId": "4",
+        "name": "Hackathon Won",
+        "symbol": "var_hackathon_won",
+        "value": 1,
+        "unsignedValue": 1,
+        "resourcePath": "project/variables.gbsres"
+      },
+      {
+        "id": "5",
+        "variableId": "5",
+        "name": "Drone Bumps",
+        "symbol": "var_drone_bumps",
+        "value": 2,
+        "unsignedValue": 2,
+        "resourcePath": "project/variables.gbsres"
+      },
+      {
+        "id": "6",
+        "variableId": "6",
+        "name": "Teammate Found",
+        "symbol": "var_teammate_found",
+        "value": 1,
+        "unsignedValue": 1,
+        "resourcePath": "project/variables.gbsres"
+      },
+      {
+        "id": "7",
+        "variableId": "7",
+        "name": "Idea Ready",
+        "symbol": "var_idea_ready",
+        "value": 1,
+        "unsignedValue": 1,
+        "resourcePath": "project/variables.gbsres"
+      },
+      {
+        "id": "8",
+        "variableId": "8",
+        "name": "Power Found",
+        "symbol": "var_power_found",
+        "value": 1,
+        "unsignedValue": 1,
+        "resourcePath": "project/variables.gbsres"
+      },
+      {
+        "id": "9",
+        "variableId": "9",
+        "name": "Prototype Working",
+        "symbol": "var_prototype_working",
+        "value": 1,
+        "unsignedValue": 1,
+        "resourcePath": "project/variables.gbsres"
+      }
+    ]
+  },
+  "clip": {
+    "path": "docs/demo-dash-four-rooms-playtest.gif",
+    "sha256": "738b3301b0c812c0cab3b21da9bea25279f8aca118d5478dde05b35a437d94b4",
+    "durationMs": 11750,
+    "timing": {
+      "mode": "native-game-time",
+      "clockHz": 4194304,
+      "dotsPerFrame": 70224,
+      "nativeFramePeriods": 702,
+      "nativeDurationMs": 11753.379821777344,
+      "decisionPausesIncluded": false,
+      "sampleDisplay": "hold-until-next-sample",
+      "interpolated": false
+    }
+  },
+  "limitations": [
+    "Physical Chromatic hardware and audio were not tested.",
+    "PyBoy playtest verifies the exact native ROM; the browser export was separately built and visibly opened."
+  ]
+}

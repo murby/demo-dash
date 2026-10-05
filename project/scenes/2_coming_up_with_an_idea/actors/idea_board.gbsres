@@ -1,0 +1,85 @@
+{
+  "_resourceType": "actor",
+  "id": "room-idea-goal",
+  "_index": 0,
+  "symbol": "actor_idea_board",
+  "prefabId": "",
+  "name": "Idea Board",
+  "coordinateType": "tiles",
+  "x": 15,
+  "y": 5,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "84d0f316-4182-5738-8a96-e9562215a9df",
+  "paletteId": "656df062-dd63-56a2-ae6c-2a207bad2831",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "rooms-event-38",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "7"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "rooms-event-34",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "IDEA IS READY.\nHEAD TO NEXT!",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "rooms-event-35",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "7",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          },
+          {
+            "id": "rooms-event-36",
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "3"
+            }
+          },
+          {
+            "id": "rooms-event-37",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "IDEA: A DRONE\nDODGING GAME!\nGO BUILD IT!",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

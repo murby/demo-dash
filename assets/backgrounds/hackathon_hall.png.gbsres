@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "646218f5-1d2d-5280-a08b-1e89543c5a4a",
+  "name": "Hackathon Hall",
+  "symbol": "bg_hackathon_hall",
+  "tileColors": "003e+014+008+024+004+014+008+024+004+014+008+024+004+014+008+024+0040+034+008+034+004+034+008+034+004+034+008+034+004+034+008+034+009+016+00e+016+00e+016+001b+",
+  "filename": "hackathon_hall.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

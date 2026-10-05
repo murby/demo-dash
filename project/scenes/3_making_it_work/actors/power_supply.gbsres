@@ -1,0 +1,78 @@
+{
+  "_resourceType": "actor",
+  "id": "room-build-power",
+  "_index": 0,
+  "symbol": "actor_power_supply",
+  "prefabId": "",
+  "name": "Power Supply",
+  "coordinateType": "tiles",
+  "x": 3,
+  "y": 5,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "84d0f316-4182-5738-8a96-e9562215a9df",
+  "paletteId": "61d0608a-1ee3-513a-93df-fef76d1cb6ef",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "rooms-event-61",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "8"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "rooms-event-58",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "POWER IS READY.\nNOW FIX THE BUILD!",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "rooms-event-59",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "8",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          },
+          {
+            "id": "rooms-event-60",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "POWER CONNECTED!\nNOW HEAD TO THE\nBUILD CONSOLE.",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

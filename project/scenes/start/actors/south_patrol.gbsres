@@ -1,0 +1,90 @@
+{
+  "_resourceType": "actor",
+  "id": "840d40fe-221f-5ca4-8efa-0e08454ef9b5",
+  "_index": 5,
+  "symbol": "actor_south_patrol",
+  "prefabId": "",
+  "name": "South Patrol",
+  "coordinateType": "tiles",
+  "x": 12,
+  "y": 13,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "a62f939e-66c1-5ea9-bb10-659bce2a7a49",
+  "paletteId": "751f147a-4934-5c58-9fc8-a6b6edee7059",
+  "direction": "down",
+  "moveSpeed": 0.5,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "id": "hack-event-41",
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 6
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "units": "tiles",
+        "collideWith": [],
+        "moveType": "horizontal",
+        "lockDirection": []
+      }
+    },
+    {
+      "id": "hack-event-42",
+      "command": "EVENT_WAIT",
+      "args": {
+        "units": "frames",
+        "frames": {
+          "type": "number",
+          "value": 24
+        }
+      }
+    },
+    {
+      "id": "hack-event-43",
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 12
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "units": "tiles",
+        "collideWith": [],
+        "moveType": "horizontal",
+        "lockDirection": []
+      }
+    },
+    {
+      "id": "hack-event-44",
+      "command": "EVENT_WAIT",
+      "args": {
+        "units": "frames",
+        "frames": {
+          "type": "number",
+          "value": 24
+        }
+      }
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "01772a50-0a1b-54ee-bfae-76ec419256f9",
+  "name": "4 - Demo Time!",
+  "symbol": "bg_4_demo_time",
+  "tileColors": "0042+038+00c+038+00c+038+0045+034+005+034+007+034+005+034+007+034+005+034+007c+",
+  "filename": "room_demo.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

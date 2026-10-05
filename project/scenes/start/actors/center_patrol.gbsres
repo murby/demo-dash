@@ -1,0 +1,90 @@
+{
+  "_resourceType": "actor",
+  "id": "6d157730-6d22-503e-bf79-7618d20ac500",
+  "_index": 6,
+  "symbol": "actor_center_patrol",
+  "prefabId": "",
+  "name": "Center Patrol",
+  "coordinateType": "tiles",
+  "x": 9,
+  "y": 4,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "a62f939e-66c1-5ea9-bb10-659bce2a7a49",
+  "paletteId": "751f147a-4934-5c58-9fc8-a6b6edee7059",
+  "direction": "down",
+  "moveSpeed": 0.5,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "id": "hack-event-45",
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        },
+        "units": "tiles",
+        "collideWith": [],
+        "moveType": "horizontal",
+        "lockDirection": []
+      }
+    },
+    {
+      "id": "hack-event-46",
+      "command": "EVENT_WAIT",
+      "args": {
+        "units": "frames",
+        "frames": {
+          "type": "number",
+          "value": 24
+        }
+      }
+    },
+    {
+      "id": "hack-event-47",
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 4
+        },
+        "units": "tiles",
+        "collideWith": [],
+        "moveType": "horizontal",
+        "lockDirection": []
+      }
+    },
+    {
+      "id": "hack-event-48",
+      "command": "EVENT_WAIT",
+      "args": {
+        "units": "frames",
+        "frames": {
+          "type": "number",
+          "value": 24
+        }
+      }
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

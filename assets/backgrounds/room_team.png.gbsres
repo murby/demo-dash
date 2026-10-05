@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "869c0096-5c45-53dc-97e1-5d3b37a7716a",
+  "name": "1 - Finding a Teammate",
+  "symbol": "bg_1_finding_a_teammate",
+  "tileColors": "004a+024+0010+024+0010+024+002e+026+00e+026+002a+025+00f+025+0067+",
+  "filename": "room_team.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

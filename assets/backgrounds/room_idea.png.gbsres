@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "3d6c4e53-f7b9-580b-b419-36a674c33088",
+  "name": "2 - Coming Up with an Idea",
+  "symbol": "bg_2_coming_up_with_an_idea",
+  "tileColors": "004a+014+0010+014+0010+014+0020+014+009+014+003+014+009+014+003+014+009+014+0099+",
+  "filename": "room_idea.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

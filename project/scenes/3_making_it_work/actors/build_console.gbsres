@@ -1,0 +1,112 @@
+{
+  "_resourceType": "actor",
+  "id": "room-build-goal",
+  "_index": 1,
+  "symbol": "actor_build_console",
+  "prefabId": "",
+  "name": "Build Console",
+  "coordinateType": "tiles",
+  "x": 15,
+  "y": 5,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "84d0f316-4182-5738-8a96-e9562215a9df",
+  "paletteId": "94513d94-2b95-5f6e-aabd-f1ee9c9412a9",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "rooms-event-68",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "9"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "rooms-event-62",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "BUILD PASSED!\nGO TO NEXT.",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "rooms-event-67",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "variable",
+                "value": "8"
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "rooms-event-63",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "9",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  }
+                },
+                {
+                  "id": "rooms-event-64",
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "3"
+                  }
+                },
+                {
+                  "id": "rooms-event-65",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "IT WORKS!\nBUGS FIXED. DEMO\nIS READY. NEXT!",
+                    "minHeight": 4,
+                    "maxHeight": 4,
+                    "textHeight": 3
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "rooms-event-66",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "NO POWER!\nGET THE SUPPLY AT\nTHE POWER DESK.",
+                    "minHeight": 4,
+                    "maxHeight": 4,
+                    "textHeight": 3
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

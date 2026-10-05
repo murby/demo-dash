@@ -1,0 +1,141 @@
+{
+  "_resourceType": "scene",
+  "id": "35142d66-6b7f-5bfd-b886-09cbdfa9c508",
+  "_index": 1,
+  "type": "TOPDOWN",
+  "name": "1 - Finding a Teammate",
+  "symbol": "scene_1_finding_a_teammate",
+  "x": 300,
+  "y": 0,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "869c0096-5c45-53dc-97e1-5d3b37a7716a",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "61d0608a-1ee3-513a-93df-fef76d1cb6ef",
+    "656df062-dd63-56a2-ae6c-2a207bad2831",
+    "94513d94-2b95-5f6e-aabd-f1ee9c9412a9",
+    "61d0608a-1ee3-513a-93df-fef76d1cb6ef"
+  ],
+  "spritePaletteIds": [
+    "e709f4cd-c28b-59f8-9525-ff11549b0af2",
+    "751f147a-4934-5c58-9fc8-a6b6edee7059",
+    "94513d94-2b95-5f6e-aabd-f1ee9c9412a9",
+    "61d0608a-1ee3-513a-93df-fef76d1cb6ef"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "rooms-event-1",
+      "command": "EVENT_TEXT_SET_ANIMATION_SPEED",
+      "args": {
+        "speedIn": 0,
+        "speedOut": 0,
+        "speed": 1,
+        "allowFastForward": true
+      }
+    },
+    {
+      "id": "rooms-event-4",
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true
+      },
+      "children": {
+        "true": [
+          {
+            "id": "rooms-event-2",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "TEAM:$06$ IDEA:$07$\nPOWER:$08$ BUILD:$09$\nROOMS: $03$/4",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          },
+          {
+            "id": "rooms-event-3",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "DRONE BUMPS: $05$\nA: TALK / USE\nB: CHECKLIST",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "rooms-event-5",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "FIND A TEAMMATE!\nTHEN GO TO NEXT.\nDODGE THE DRONES.",
+          "ARROWS: WALK\nA: TALK / USE\nB: CHECKLIST"
+        ],
+        "minHeight": 4,
+        "maxHeight": 4,
+        "textHeight": 3
+      }
+    }
+  ],
+  "playerHit1Script": [
+    {
+      "id": "rooms-event-9",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "4"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "id": "rooms-event-6",
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "5"
+            }
+          },
+          {
+            "id": "rooms-event-7",
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 15
+              },
+              "units": "tiles"
+            }
+          },
+          {
+            "id": "rooms-event-8",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "DRONE BUMP!\nBACK TO THIS ROOM.\nPROGRESS KEPT.",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f3d+00d+0f4+00!0f2+00d+0f4+00!0f2+00d+0f4+00!0f2+0012+0f2+0012+0f2+003+0f6+009+0f2+003+0f6+009+0f2+0012+0f2+00b+0f5+002+0f2+00b+0f5+002+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

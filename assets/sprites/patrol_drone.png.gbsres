@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "a62f939e-66c1-5ea9-bb10-659bce2a7a49",
+  "name": "Patrol Drone",
+  "symbol": "sprite_patrol_drone",
+  "states": [
+    {
+      "id": "e4f234b7-ce43-505c-899f-7e2d19c423f8",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "e8aa34a6-edba-5bcd-87f4-d5f329aae8e6",
+          "frames": [
+            {
+              "id": "5ddf78bc-f2cc-54cd-a1a6-78aa9103c916",
+              "tiles": [
+                {
+                  "id": "1c234de7-d3c3-55b9-8c7b-e7b916f6c24c",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "47151d7f-709e-5c53-b348-9c5679659324",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4413e728-f23a-5abe-83ef-b3e1051b4c8c",
+          "frames": [
+            {
+              "id": "134545e0-51d4-5da1-87df-53d06336da2f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "0d8b38d5-3d56-59c2-a7ff-20aa817fd7ee",
+          "frames": [
+            {
+              "id": "862be558-f517-5f4a-b723-b6f072aad6f0",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a05682d4-0368-5f1c-9902-f64c8e2e993d",
+          "frames": [
+            {
+              "id": "662150db-283c-5bbd-b664-1215ef1aeea1",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "f2863c4f-4f93-507b-8e2b-bbfb9c8abd83",
+          "frames": [
+            {
+              "id": "33728e20-9239-557c-9460-45dbaeaec002",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "b5ea3d52-c50b-54fc-8832-8ba76c2b85a8",
+          "frames": [
+            {
+              "id": "d6a9501b-bd57-5098-ad24-8926e5d309ce",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "e41393bd-7b26-570e-930d-7424f18322f7",
+          "frames": [
+            {
+              "id": "74c7d45a-8d7f-582b-a7a3-3248416b3ae8",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "10da68e7-b7d0-56cf-92cb-1fcc9b72f571",
+          "frames": [
+            {
+              "id": "1cef918d-ac7b-541f-a77e-36b3287a6ee1",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "patrol_drone.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "d7c61f1ad9cfbb19b67c2601c8573a7855205634"
+}

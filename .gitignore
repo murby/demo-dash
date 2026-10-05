@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+build/
+_gbsbuild/
+.cache/
+artifacts/playtests/
+*.sav
+*.srm
+*.state
+*.gbc.debug/

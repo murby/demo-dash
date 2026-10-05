@@ -1,0 +1,90 @@
+{
+  "_resourceType": "actor",
+  "id": "room-build-drone-1",
+  "_index": 3,
+  "symbol": "actor_build_patrol_2",
+  "prefabId": "",
+  "name": "build Patrol 2",
+  "coordinateType": "tiles",
+  "x": 12,
+  "y": 7,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "a62f939e-66c1-5ea9-bb10-659bce2a7a49",
+  "paletteId": "751f147a-4934-5c58-9fc8-a6b6edee7059",
+  "direction": "down",
+  "moveSpeed": 0.5,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "id": "rooms-event-73",
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 16
+        },
+        "y": {
+          "type": "number",
+          "value": 7
+        },
+        "units": "tiles",
+        "collideWith": [],
+        "moveType": "horizontal",
+        "lockDirection": []
+      }
+    },
+    {
+      "id": "rooms-event-74",
+      "command": "EVENT_WAIT",
+      "args": {
+        "units": "frames",
+        "frames": {
+          "type": "number",
+          "value": 40
+        }
+      }
+    },
+    {
+      "id": "rooms-event-75",
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 12
+        },
+        "y": {
+          "type": "number",
+          "value": 7
+        },
+        "units": "tiles",
+        "collideWith": [],
+        "moveType": "horizontal",
+        "lockDirection": []
+      }
+    },
+    {
+      "id": "rooms-event-76",
+      "command": "EVENT_WAIT",
+      "args": {
+        "units": "frames",
+        "frames": {
+          "type": "number",
+          "value": 40
+        }
+      }
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

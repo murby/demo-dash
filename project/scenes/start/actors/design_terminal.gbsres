@@ -1,0 +1,80 @@
+{
+  "_resourceType": "actor",
+  "id": "d40c2994-b052-537e-b69e-a00c5ff78ebc",
+  "_index": 1,
+  "symbol": "actor_design_terminal",
+  "prefabId": "",
+  "name": "Design Terminal",
+  "coordinateType": "tiles",
+  "x": 15,
+  "y": 5,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "84d0f316-4182-5738-8a96-e9562215a9df",
+  "paletteId": "94513d94-2b95-5f6e-aabd-f1ee9c9412a9",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "hack-event-14",
+      "command": "EVENT_IF_TRUE",
+      "args": {
+        "variable": "1",
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "hack-event-10",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "ALREADY COMPLETE!\nB FOR CHECKLIST.",
+              "position": "bottom",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "hack-event-11",
+            "command": "EVENT_SET_TRUE",
+            "args": {
+              "variable": "1"
+            }
+          },
+          {
+            "id": "hack-event-12",
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "3"
+            }
+          },
+          {
+            "id": "hack-event-13",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "ART POLISHED!\nYOUR DEMO SHINES.\nLOOKING GOOD!",
+              "position": "bottom",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

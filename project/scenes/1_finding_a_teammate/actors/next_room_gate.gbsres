@@ -1,0 +1,74 @@
+{
+  "_resourceType": "actor",
+  "id": "room-team-exit",
+  "_index": 3,
+  "symbol": "actor_team_next_room_gate",
+  "prefabId": "",
+  "name": "Next Room Gate",
+  "coordinateType": "tiles",
+  "x": 16,
+  "y": 15,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "84d0f316-4182-5738-8a96-e9562215a9df",
+  "paletteId": "61d0608a-1ee3-513a-93df-fef76d1cb6ef",
+  "direction": "left",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "rooms-event-24",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "6"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "c52890c1-267c-5b7e-bdde-81ce5e4869c8",
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 15
+              },
+              "direction": "up",
+              "fadeSpeed": "2"
+            },
+            "id": "76c8b6c3-9980-504c-99b4-6beda2d6b3db"
+          }
+        ],
+        "false": [
+          {
+            "id": "rooms-event-23",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "FIND A TEAMMATE.\nLOOK BY THE TEAM\nTABLE UP NORTH.",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,56 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "Code Ready",
+      "symbol": "var_code_ready"
+    },
+    {
+      "id": "1",
+      "name": "Art Ready",
+      "symbol": "var_art_ready"
+    },
+    {
+      "id": "2",
+      "name": "Pitch Ready",
+      "symbol": "var_pitch_ready"
+    },
+    {
+      "id": "3",
+      "name": "Demo Progress",
+      "symbol": "var_demo_progress"
+    },
+    {
+      "id": "4",
+      "name": "Hackathon Won",
+      "symbol": "var_hackathon_won"
+    },
+    {
+      "id": "5",
+      "name": "Drone Bumps",
+      "symbol": "var_drone_bumps"
+    },
+    {
+      "id": "6",
+      "name": "Teammate Found",
+      "symbol": "var_teammate_found"
+    },
+    {
+      "id": "7",
+      "name": "Idea Ready",
+      "symbol": "var_idea_ready"
+    },
+    {
+      "id": "8",
+      "name": "Power Found",
+      "symbol": "var_power_found"
+    },
+    {
+      "id": "9",
+      "name": "Prototype Working",
+      "symbol": "var_prototype_working"
+    }
+  ],
+  "constants": []
+}

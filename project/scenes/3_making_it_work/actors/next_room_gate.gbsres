@@ -1,0 +1,74 @@
+{
+  "_resourceType": "actor",
+  "id": "room-build-exit",
+  "_index": 4,
+  "symbol": "actor_build_next_room_gate",
+  "prefabId": "",
+  "name": "Next Room Gate",
+  "coordinateType": "tiles",
+  "x": 16,
+  "y": 15,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "84d0f316-4182-5738-8a96-e9562215a9df",
+  "paletteId": "61d0608a-1ee3-513a-93df-fef76d1cb6ef",
+  "direction": "left",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "rooms-event-78",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "9"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "352ba9f2-7238-566c-8f93-16452a75492a",
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 15
+              },
+              "direction": "up",
+              "fadeSpeed": "2"
+            },
+            "id": "8e49f956-5606-56ed-b4fe-3159ac827fbc"
+          }
+        ],
+        "false": [
+          {
+            "id": "rooms-event-77",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "GET POWER FIRST.\nTHEN FIX THE BUILD\nAT THE BUILD DESK.",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

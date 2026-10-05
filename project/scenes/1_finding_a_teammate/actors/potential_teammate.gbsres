@@ -1,0 +1,85 @@
+{
+  "_resourceType": "actor",
+  "id": "room-team-goal",
+  "_index": 0,
+  "symbol": "actor_potential_teammate",
+  "prefabId": "",
+  "name": "Potential Teammate",
+  "coordinateType": "tiles",
+  "x": 15,
+  "y": 5,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+  "paletteId": "94513d94-2b95-5f6e-aabd-f1ee9c9412a9",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "rooms-event-14",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "6"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "rooms-event-10",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "TEAMMATE READY!\nMEET YOU AT NEXT.",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "rooms-event-11",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "6",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          },
+          {
+            "id": "rooms-event-12",
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "3"
+            }
+          },
+          {
+            "id": "rooms-event-13",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "I WILL JOIN YOU!\nLET US WIN THIS.\nHEAD TO NEXT!",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

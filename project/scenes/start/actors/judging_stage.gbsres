@@ -1,0 +1,172 @@
+{
+  "_resourceType": "actor",
+  "id": "09aec6ab-12eb-53be-b964-9e92c80f1fcd",
+  "_index": 3,
+  "symbol": "actor_judging_stage",
+  "prefabId": "",
+  "name": "Judging Stage",
+  "coordinateType": "tiles",
+  "x": 15,
+  "y": 12,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "393b64af-4b0e-538c-8ada-5e5c57263792",
+  "paletteId": "61d0608a-1ee3-513a-93df-fef76d1cb6ef",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "hack-event-32",
+      "command": "EVENT_IF_TRUE",
+      "args": {
+        "variable": "4",
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "hack-event-25",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "HACKATHON CHAMP!\nENJOY YOUR TROPHY.",
+              "position": "bottom",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "hack-event-31",
+            "command": "EVENT_IF_TRUE",
+            "args": {
+              "variable": "0",
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "hack-event-29",
+                  "command": "EVENT_IF_TRUE",
+                  "args": {
+                    "variable": "1",
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "hack-event-27",
+                        "command": "EVENT_IF_TRUE",
+                        "args": {
+                          "variable": "2",
+                          "__collapseElse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "id": "hack-event-20",
+                              "command": "EVENT_SET_TRUE",
+                              "args": {
+                                "variable": "4"
+                              }
+                            },
+                            {
+                              "id": "hack-event-21",
+                              "command": "EVENT_ACTOR_DEACTIVATE",
+                              "args": {
+                                "actorId": "b53d2bd5-8011-5be3-a88f-eaaad38da685"
+                              }
+                            },
+                            {
+                              "id": "hack-event-22",
+                              "command": "EVENT_ACTOR_DEACTIVATE",
+                              "args": {
+                                "actorId": "840d40fe-221f-5ca4-8efa-0e08454ef9b5"
+                              }
+                            },
+                            {
+                              "id": "hack-event-23",
+                              "command": "EVENT_ACTOR_DEACTIVATE",
+                              "args": {
+                                "actorId": "6d157730-6d22-503e-bf79-7618d20ac500"
+                              }
+                            },
+                            {
+                              "id": "hack-event-24",
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "YOU WIN!\nBEST DEMO AWARD!\nTHE CROWD CHEERS.",
+                                  "CODE. ART. PITCH.\nYOU NAILED IT!\nTHANKS FOR PLAYING."
+                                ],
+                                "position": "bottom",
+                                "minHeight": 4,
+                                "maxHeight": 4,
+                                "textHeight": 3
+                              }
+                            }
+                          ],
+                          "false": [
+                            {
+                              "id": "hack-event-26",
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": "NEED A GREAT PITCH.\nVISIT COFFEE!",
+                                "position": "bottom",
+                                "minHeight": 4,
+                                "maxHeight": 4,
+                                "textHeight": 3
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    "false": [
+                      {
+                        "id": "hack-event-28",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "NEED GREAT ART.\nVISIT ART!",
+                          "position": "bottom",
+                          "minHeight": 4,
+                          "maxHeight": 4,
+                          "textHeight": 3
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "hack-event-30",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "NEED WORKING CODE.\nVISIT CODE!",
+                    "position": "bottom",
+                    "minHeight": 4,
+                    "maxHeight": 4,
+                    "textHeight": 3
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

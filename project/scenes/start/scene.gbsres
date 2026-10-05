@@ -1,0 +1,133 @@
+{
+  "_resourceType": "scene",
+  "id": "12f07015-0a42-504a-8d39-3f689e13ad3a",
+  "_index": 0,
+  "type": "TOPDOWN",
+  "name": "Hackathon Hall",
+  "symbol": "scene_start",
+  "x": 0,
+  "y": 0,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "646218f5-1d2d-5280-a08b-1e89543c5a4a",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "46a3edb7-fba4-5d58-ab98-1c5146f9de14",
+    "656df062-dd63-56a2-ae6c-2a207bad2831",
+    "94513d94-2b95-5f6e-aabd-f1ee9c9412a9",
+    "61d0608a-1ee3-513a-93df-fef76d1cb6ef"
+  ],
+  "spritePaletteIds": [
+    "e709f4cd-c28b-59f8-9525-ff11549b0af2",
+    "751f147a-4934-5c58-9fc8-a6b6edee7059",
+    "656df062-dd63-56a2-ae6c-2a207bad2831",
+    "61d0608a-1ee3-513a-93df-fef76d1cb6ef"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "hack-event-3",
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true
+      },
+      "children": {
+        "true": [
+          {
+            "id": "hack-event-1",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "CODE:$00$ ART:$01$\nPITCH:$02$  (0/1)\nDEMO: $03$/3",
+              "position": "bottom",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          },
+          {
+            "id": "hack-event-2",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "DRONE BUMPS: $05$\nFIND ALL STATIONS.\nA TO INTERACT.",
+              "position": "bottom",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "hack-event-4",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "DEMO DASH!\nWIN THE HACKATHON.\nDODGE THE DRONES!",
+          "VISIT CODE, ART,\nAND COFFEE. THEN\nMEET THE JUDGE.",
+          "ARROWS: WALK\nA: INTERACT\nB: CHECKLIST"
+        ],
+        "position": "bottom",
+        "minHeight": 4,
+        "maxHeight": 4,
+        "textHeight": 3
+      }
+    }
+  ],
+  "playerHit1Script": [
+    {
+      "id": "hack-event-36",
+      "command": "EVENT_IF_TRUE",
+      "args": {
+        "variable": "4",
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "id": "hack-event-33",
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "5"
+            }
+          },
+          {
+            "id": "hack-event-34",
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 15
+              },
+              "units": "tiles"
+            }
+          },
+          {
+            "id": "hack-event-35",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "DRONE BUMP!\nBACK TO CHECK-IN.\nPROGRESS KEPT.",
+              "position": "bottom",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f3d+00!0f4+008+0f4+00!0f2+00!0f4+008+0f4+00!0f2+00!0f4+008+0f4+00!0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+00!0f4+008+0f4+00!0f2+00!0f4+008+0f4+00!0f2+00!0f4+008+0f4+00!0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

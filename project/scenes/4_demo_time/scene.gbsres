@@ -1,0 +1,138 @@
+{
+  "_resourceType": "scene",
+  "id": "352ba9f2-7238-566c-8f93-16452a75492a",
+  "_index": 4,
+  "type": "TOPDOWN",
+  "name": "4 - Demo Time!",
+  "symbol": "scene_4_demo_time",
+  "x": 1200,
+  "y": 0,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "01772a50-0a1b-54ee-bfae-76ec419256f9",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "46a3edb7-fba4-5d58-ab98-1c5146f9de14",
+    "656df062-dd63-56a2-ae6c-2a207bad2831",
+    "94513d94-2b95-5f6e-aabd-f1ee9c9412a9",
+    "61d0608a-1ee3-513a-93df-fef76d1cb6ef"
+  ],
+  "spritePaletteIds": [
+    "e709f4cd-c28b-59f8-9525-ff11549b0af2",
+    "751f147a-4934-5c58-9fc8-a6b6edee7059",
+    "94513d94-2b95-5f6e-aabd-f1ee9c9412a9",
+    "61d0608a-1ee3-513a-93df-fef76d1cb6ef"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "rooms-event-79",
+      "command": "EVENT_TEXT_SET_ANIMATION_SPEED",
+      "args": {
+        "speedIn": 0,
+        "speedOut": 0,
+        "speed": 1,
+        "allowFastForward": true
+      }
+    },
+    {
+      "id": "rooms-event-82",
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true
+      },
+      "children": {
+        "true": [
+          {
+            "id": "rooms-event-80",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "TEAM:$06$ IDEA:$07$\nPOWER:$08$ BUILD:$09$\nROOMS: $03$/4",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          },
+          {
+            "id": "rooms-event-81",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "DRONE BUMPS: $05$\nA: TALK / USE\nB: CHECKLIST",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "rooms-event-83",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "REACH THE STAGE.\nFACE THE TROPHY\nAND PRESS A!",
+        "minHeight": 4,
+        "maxHeight": 4,
+        "textHeight": 3
+      }
+    }
+  ],
+  "playerHit1Script": [
+    {
+      "id": "rooms-event-87",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "4"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "id": "rooms-event-84",
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "5"
+            }
+          },
+          {
+            "id": "rooms-event-85",
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 15
+              },
+              "units": "tiles"
+            }
+          },
+          {
+            "id": "rooms-event-86",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "DRONE BUMP!\nBACK TO THIS ROOM.\nPROGRESS KEPT.",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f3d+005+0f8+005+0f2+005+0f8+005+0f2+005+0f8+005+0f2+0012+0f2+0012+0f2+0012+0f2+002+0f4+005+0f4+003+0f2+002+0f4+005+0f4+003+0f2+002+0f4+005+0f4+003+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

@@ -1,0 +1,138 @@
+{
+  "_resourceType": "scene",
+  "id": "c52890c1-267c-5b7e-bdde-81ce5e4869c8",
+  "_index": 2,
+  "type": "TOPDOWN",
+  "name": "2 - Coming Up with an Idea",
+  "symbol": "scene_2_coming_up_with_an_idea",
+  "x": 600,
+  "y": 0,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "3d6c4e53-f7b9-580b-b419-36a674c33088",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "94513d94-2b95-5f6e-aabd-f1ee9c9412a9",
+    "656df062-dd63-56a2-ae6c-2a207bad2831",
+    "94513d94-2b95-5f6e-aabd-f1ee9c9412a9",
+    "61d0608a-1ee3-513a-93df-fef76d1cb6ef"
+  ],
+  "spritePaletteIds": [
+    "e709f4cd-c28b-59f8-9525-ff11549b0af2",
+    "751f147a-4934-5c58-9fc8-a6b6edee7059",
+    "94513d94-2b95-5f6e-aabd-f1ee9c9412a9",
+    "61d0608a-1ee3-513a-93df-fef76d1cb6ef"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "rooms-event-25",
+      "command": "EVENT_TEXT_SET_ANIMATION_SPEED",
+      "args": {
+        "speedIn": 0,
+        "speedOut": 0,
+        "speed": 1,
+        "allowFastForward": true
+      }
+    },
+    {
+      "id": "rooms-event-28",
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true
+      },
+      "children": {
+        "true": [
+          {
+            "id": "rooms-event-26",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "TEAM:$06$ IDEA:$07$\nPOWER:$08$ BUILD:$09$\nROOMS: $03$/4",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          },
+          {
+            "id": "rooms-event-27",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "DRONE BUMPS: $05$\nA: TALK / USE\nB: CHECKLIST",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "rooms-event-29",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "VISIT THE IDEA\nBOARD. DODGE THE\nDRONES IN AISLES.",
+        "minHeight": 4,
+        "maxHeight": 4,
+        "textHeight": 3
+      }
+    }
+  ],
+  "playerHit1Script": [
+    {
+      "id": "rooms-event-33",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "4"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "id": "rooms-event-30",
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "5"
+            }
+          },
+          {
+            "id": "rooms-event-31",
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 15
+              },
+              "units": "tiles"
+            }
+          },
+          {
+            "id": "rooms-event-32",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "DRONE BUMP!\nBACK TO THIS ROOM.\nPROGRESS KEPT.",
+              "minHeight": 4,
+              "maxHeight": 4,
+              "textHeight": 3
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f3d+00d+0f4+00!0f2+00d+0f4+00!0f2+00d+0f4+00!0f2+0012+0f2+009+0f4+005+0f2+002+0f4+003+0f4+005+0f2+002+0f4+003+0f4+005+0f2+002+0f4+00c+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}
